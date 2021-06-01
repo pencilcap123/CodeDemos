@@ -99,15 +99,21 @@ type StudentList struct {
 
 # 生成k8s代码
 ## 安装依赖
-```bash
+```shell
 go get -u k8s.io/apimachinery/pkg/apis/meta/v1`
 go get -u k8s.io/code-generator/...`
 ```
 
 ## 生成代码
 将上述源码整个工程拷贝到$GOPATH/src下，进入工程根路径，在根路径执行以下命令
-```bash
-$GOPATH/pkg/mod/k8s.io/code-generator@v0.21.1/generate-groups.sh all CustomK8SResource/pkg/generated CustomK8SResource/pkg/apis bolingcavalry:v1 --go-header-file $GOPATH/pkg/mod/k8s.io/code-generator@v0.21.1/hack/boilerplate.go.txt --output-base $GOPATH/src/ -v 10
+```shell
+$GOPATH/pkg/mod/k8s.io/code-generator@v0.21.1/generate-groups.sh all \
+CustomK8SResource/pkg/generated \
+CustomK8SResource/pkg/apis \
+bolingcavalry:v1 \
+--go-header-file $GOPATH/pkg/mod/k8s.io/code-generator@v0.21.1/hack/boilerplate.go.txt \
+--output-base $GOPATH/src/ \
+-v 10
 ```
 
 稍等片刻，最后打印如下日志即代表成功
