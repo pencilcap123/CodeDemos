@@ -1,6 +1,7 @@
 # 样例代码
 ## 创建如下工程结构
-![image](https://user-images.githubusercontent.com/41630875/120258346-6f342900-c2c4-11eb-99e8-579ec35e160a.png)
+![image](https://user-images.githubusercontent.com/41630875/120259230-241b1580-c2c6-11eb-9d6e-67dd6c48d4c0.png)
+
 
 ## 各文件代码如下
 切记不要删除注释，注释为code-generator.sh所需信息
